@@ -1,0 +1,5 @@
+<div *ngIf="healthData">
+    <div *ngFor="let microservice of healthData | keyvalue">
+      <app-microservice-card [microserviceData]="microservice.value" [microserviceName]="microservice.key"></app-microservice-card>
+    </div>
+  </div>

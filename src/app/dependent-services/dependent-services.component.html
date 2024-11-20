@@ -1,0 +1,6 @@
+<h3>Dependent Services</h3>
+<mat-list>
+  <mat-list-item *ngFor="let service of dependentServices | objectTransformPipe">
+    <span>{{ service.key }}: {{ service.value }}</span>
+  </mat-list-item>
+</mat-list>

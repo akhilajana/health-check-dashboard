@@ -1,0 +1,9 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ microserviceName }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <app-environment-table [environments]="microserviceData"></app-environment-table>
+      <app-dependent-services [dependentServices]="microserviceData.dependentServices"></app-dependent-services>
+    </mat-card-content>
+  </mat-card>
